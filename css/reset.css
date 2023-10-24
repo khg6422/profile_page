@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px '맑은 고딕';
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+strong {
+    display: block;
+}
+
+img,
+input,
+textarea,
+select {
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p {
+    line-height: 1.4;
+}
+
+address {
+    font-style: normal;
+}
+
+table,
+th,
+td {
+    border: 1px solid #867d80;
+    border-collapse: collapse;
+}
+
+img,
+header,
+nav,
+main,
+article,
+section,
+aside,
+footer {
+    display: block;
+}

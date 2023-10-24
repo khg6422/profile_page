@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+.wrapper { /* 그리드시스템 */
+    position: relative; /* position; absoiute;의 기준 */
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    /* background-color: skyblue; */
+}
+
+@font-face {
+    font-family: 'Cartoon Slam';
+    src: url('../font/Cartoon-Slam.woff');
+
+    font-family: 'TT투게더';
+    src: url('../font/TT투게더.woff');
+}
+
+/* ===== header ===== */
+header {
+    padding: 23px;
+    background-color: black;
+}
+
+/* gnb */
+.gnb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.gnb > li {
+    font-size: 34px;
+    line-height: 78px;
+    font-family: 'Cartoon Slam';
+}
+
+.gnb a {
+    color: white;
+}
+
+/* ===== main ===== */
+/* section === profile */
+.profile {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.profile::after {
+    position: absolute;
+    top: 0; left: 0;
+    content: '';
+    width: 100%; height: 100%;
+} 
+
+.profile img {
+    width: 100%;
+}
+
+/* profile_div */
+.profile_div {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 1080px; height: 585px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+.profile_div > img {
+    margin-top: 22px;
+    margin-bottom: 68px;
+    margin-left: 150px;
+}
+
+/* info */
+.info {
+    padding-top: 68px;
+    padding-bottom: 68px;
+    padding-right: 150px;
+    margin-left: 42px;
+}
+
+.info > h2 {
+    font-family: 'Cartoon Slam';
+    font-size: 78px;
+    margin-bottom: 40px;
+}
+
+.info li {
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-family: 'TT투게더';
+    font-size: 19px;
+}
+
+.info .blank {
+    margin-left: 40px;
+}
+
+/* film */
+.film {
+    width: 100%; height: 156px;
+    background-color: black;
+}
+
+/* section === story */
+.title-bar1 {
+    width: 100%; height: 100px;
+    background-color: black;
+}
+
+.title-bar1 .story-title {
+    color: white;
+    font-size: 70px;
+    padding: 19px 0;
+    line-height: 70px;
+    font-family: 'Cartoon Slam';
+}
