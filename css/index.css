@@ -14,7 +14,15 @@
 
     font-family: 'TT투게더';
     src: url('../font/TT투게더.woff');
+
+    font-family: 'Leferi Base Regular';
+    src: url('../font/LeferiBaseRegular.woff');
+
+    font-family: 'Leferi Base Bold ';
+    src: url('../font/LeferiBaseBold.woff');
 }
+
+
 
 /* ===== header ===== */
 header {
@@ -44,7 +52,6 @@ header {
 /* section === profile */
 .profile {
     position: relative;
-    margin-bottom: 100px;
 }
 
 .profile::after {
@@ -54,7 +61,8 @@ header {
     width: 100%; height: 100%;
 } 
 
-.profile img {
+/* img-container1 */
+.img-container1 > img {
     width: 100%;
 }
 
@@ -107,9 +115,16 @@ header {
 .film {
     width: 100%; height: 156px;
     background-color: black;
+    margin-bottom: 100px;
 }
 
 /* section === story */
+/* story */
+.story {
+    margin-bottom: 100px;
+}
+
+/* title-bar1 */
 .title-bar1 {
     width: 100%; height: 100px;
     background-color: black;
@@ -121,4 +136,98 @@ header {
     padding: 19px 0;
     line-height: 70px;
     font-family: 'Cartoon Slam';
+}
+
+/* img-container2 */
+.img-container2 {
+    position: relative;
+}
+
+.img-container2::after {
+    position: absolute;
+    top: 0; left: 0;
+    content: '';
+    width: 100%; height: 100%;
+}
+
+/* story_bg */
+.story_bg > img {
+    width: 100%;
+}
+
+/* story_div */
+.story_div {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.year {
+    width: 1176px;
+    position: absolute;
+    top: -90px; left: -20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.year > p {
+    font-family: 'Cartoon Slam';
+    font-size: 29px;
+}
+
+.story_div > img:first-child {
+    width: 1136px;
+}
+
+/* select-icon */
+.select-icon {
+    display: flex;
+    width: 1136px;
+    justify-content: space-between;
+    position: absolute;
+    top: 0; left: 0;
+    display: none;
+}
+
+/* start, build, dicide */
+.start,
+.raise,
+.decide {
+    position: absolute;
+    top: 27px; left: 53px;
+    width: 487px; height: 392px;
+    padding: 40px 60px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.start p:first-child,
+.raise p:first-child,
+.decide p:first-child { 
+    font-family: 'Cartoon Slam';
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.start hr,
+.raise hr,
+.decide hr {
+    border: solid 1px white;
+    margin-bottom: 10px;
+}
+
+.start strong,
+.raise strong,
+.decide strong {
+    font-family: 'Leferi Base Bold';
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.start p:last-child,
+.raise p:last-child,
+.decide p:last-child {
+    font-size: 17px;
 }
