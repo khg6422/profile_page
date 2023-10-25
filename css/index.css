@@ -48,6 +48,10 @@ header {
     color: white;
 }
 
+.gnb a:hover {
+    color: #6aa9ff;
+}
+
 /* ===== main ===== */
 /* section === profile */
 .profile {
@@ -164,7 +168,7 @@ header {
 }
 
 .year {
-    width: 1176px;
+    width: 1180px;
     position: absolute;
     top: -90px; left: -20px;
     display: flex;
@@ -184,23 +188,38 @@ header {
 /* select-icon */
 .select-icon {
     display: flex;
-    width: 1136px;
-    justify-content: space-between;
+}
+
+.select-icon > img {
+    display: none;
+}
+
+.select-icon > .start-img {
     position: absolute;
     top: 0; left: 0;
-    display: none;
+}
+
+.select-icon > .raise-img {
+    position: absolute;
+    top: 0; left: 540px;
+}
+
+.select-icon > .decide-img {
+    position: absolute;
+    top: 0; left: 1081px;
 }
 
 /* start, build, dicide */
 .start,
 .raise,
 .decide {
+    display: none;
     position: absolute;
     top: 27px; left: 53px;
     width: 487px; height: 392px;
     padding: 40px 60px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .start p:first-child,
