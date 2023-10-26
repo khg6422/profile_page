@@ -18,7 +18,7 @@
     font-family: 'Leferi Base Regular';
     src: url('../font/LeferiBaseRegular.woff');
 
-    font-family: 'Leferi Base Bold ';
+    font-family: 'Leferi Base Bold';
     src: url('../font/LeferiBaseBold.woff');
 }
 
@@ -249,4 +249,198 @@ header {
 .raise p:last-child,
 .decide p:last-child {
     font-size: 17px;
+}
+
+/* section === skills */
+.skills {
+    margin-bottom: 100px;
+}
+
+/* title-bar2 */
+.title-bar2 {
+    width: 100%; height: 100px;
+    background-color: black;
+}
+
+.title-bar2 .skills-title {
+    color: white;
+    font-size: 70px;
+    padding: 19px 0;
+    line-height: 70px;
+    font-family: 'Cartoon Slam';
+}
+
+/* img-container4 */
+.img-container4 {
+    position: relative;
+}
+
+.img-container4::after {
+    position: absolute;
+    top: 0; left: 0;
+    content: '';
+    width: 100%; height: 100%;
+}
+
+.img-container4 > img {
+    width: 100%;
+}
+
+/* graph */
+.graph {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.graph > .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.graph > .row:first-child {
+    margin-top: 100px;
+}
+
+.graph > .row > div {
+    display: flex;
+    align-items: center;
+}
+
+.graph .Pr-bar {
+    width: 450px; height: 60px;
+    background-color: #8c5ba4;
+}
+
+.graph .Ae-bar {
+    width: 450px; height: 60px;
+    background-color: #a87eb7;
+}
+
+.graph .Ai-bar {
+    width: 450px; height: 60px;
+    background-color: #df871e;
+}
+
+.graph .Ps-bar {
+    width: 450px; height: 60px;
+    background-color: #76c8da;
+}
+
+.graph .Ht-bar {
+    width: 450px; height: 60px;
+    background-color: #fe7a62;
+}
+
+.graph .Cs-bar {
+    width: 450px; height: 60px;
+    background-color: #009ce5;
+}
+
+.graph .Js-bar {
+    width: 450px; height: 60px;
+    background-color: #ffcb3f;
+}
+
+.graph .Jq-bar {
+    width: 450px; height: 60px;
+    background-color: #ed4747;
+}
+
+/* section === portfolio */
+.portfolio {
+    margin-bottom: 0;
+}
+
+/* title-bar3 */
+.title-bar3 {
+    width: 100%; height: 100px;
+    background-color: black;
+    margin-bottom: 100px;
+}
+
+.title-bar3 .portfolio-title {
+    color: white;
+    font-size: 62px;
+    padding: 19px 0;
+    line-height: 70px;
+    font-family: 'Cartoon Slam';
+}
+
+/* sub-title1 */
+.sub-title1 {
+    margin-bottom: 150px;
+    font-size: 76px;
+    font-family: 'Cartoon Slam'
+}
+
+/* video 중복태그 */
+.video1,
+.video2,
+.video3 {
+    display: flex;
+    margin-bottom: 200px;
+}
+
+.video1 > .wrapper,
+.video2 > .wrapper,
+.video3 > .wrapper {
+    display: flex;
+    position: relative;
+}
+
+.video-box {
+    width: 706px; height: 468px;
+    background-color: black;
+}
+
+.video1 strong,
+.video2 strong,
+.video3 strong {
+    font-size: 50px;
+    font-family: 'Leferi Base Bold';
+    margin-bottom: 20px;
+}
+
+.video1 p,
+.video2 p,
+.video3 p {
+    font-size: 24px;
+    font-family: 'Leferi Base Bold';
+}
+
+/* video1 */
+.content1 {
+    margin-left: 50px;
+}
+
+.content1 > img {
+    position: absolute;
+    top: 229px; left: 1000px;
+}
+
+/* video2 */
+.video2 > .wrapper {
+    justify-content: space-between;
+}
+
+.content2 {
+    margin-right: 50px;
+}
+
+.content2 > img {
+    position: absolute;
+    top: 312px; left: 0;
+}
+
+/* video3 */
+.content3 {
+    margin-left: 50px;
+}
+
+.content3 > img {
+    position: absolute;
+    top: 259px; left: 900px;
 }
