@@ -351,7 +351,7 @@ header {
 
 /* section === portfolio */
 .portfolio {
-    margin-bottom: 0;
+    margin-bottom: 300px;
 }
 
 /* title-bar3 */
@@ -369,24 +369,24 @@ header {
     font-family: 'Cartoon Slam';
 }
 
-/* sub-title1 */
-.sub-title1 {
+/* sub-title */
+.sub-title {
     margin-bottom: 150px;
     font-size: 76px;
     font-family: 'Cartoon Slam'
 }
 
-/* video 중복태그 */
+/* video */
 .video1,
 .video2,
 .video3 {
-    display: flex;
     margin-bottom: 200px;
 }
 
 .video1 > .wrapper,
 .video2 > .wrapper,
-.video3 > .wrapper {
+.video3 > .wrapper,
+.video4 > .wrapper {
     display: flex;
     position: relative;
 }
@@ -398,7 +398,8 @@ header {
 
 .video1 strong,
 .video2 strong,
-.video3 strong {
+.video3 strong,
+.video4 strong {
     font-size: 50px;
     font-family: 'Leferi Base Bold';
     margin-bottom: 20px;
@@ -406,7 +407,8 @@ header {
 
 .video1 p,
 .video2 p,
-.video3 p {
+.video3 p,
+.video4 p {
     font-size: 24px;
     font-family: 'Leferi Base Bold';
 }
@@ -443,4 +445,133 @@ header {
 .content3 > img {
     position: absolute;
     top: 259px; left: 900px;
+}
+
+/* video4 */
+.video4 {
+    margin-bottom: 300px;
+}
+
+.video4 > .wrapper {
+    justify-content: space-between;
+}
+
+.content4 {
+    margin-right: 50px;
+}
+
+.content4 > img {
+    position: absolute;
+    top: 220px; left: 0;
+}
+
+/* web */
+.web1 {
+    margin-bottom: 200px;
+}
+
+.web1 > .wrapper,
+.web2 > .wrapper {
+    display: flex;
+    position: relative;
+}
+
+.web-box {
+    width: 706px; height: 468px;
+    background-color: black;
+}
+
+.web1 strong,
+.web2 strong {
+    font-size: 50px;
+    font-family: 'Leferi Base Bold';
+    margin-bottom: 20px;
+}
+
+.web1 p,
+.web2 p {
+    font-size: 24px;
+    font-family: 'Leferi Base Bold';
+}
+
+/* web1 */
+.content5 {
+    margin-left: 50px;
+}
+
+.content5 > img {
+    position: absolute;
+    top: 215px; left: 970px;
+}
+
+/* web2 */
+.wed2 {
+    margin-bottom: 300px;
+}
+
+.web2 > .wrapper {
+    justify-content: space-between;
+}
+
+.content6 {
+    margin-right: 50px;
+}
+
+.content6 > img {
+    position: absolute;
+    top: 240px; left: 200px;
+}
+
+/* button */
+.button1,
+.button2 {
+    text-align: center;
+    border: solid 4px black;
+    margin-top: 20px;
+}
+
+.button1:hover p,
+.button2:hover p{
+    background-color: #76c8da;
+}
+
+/* ===== footer ===== */
+footer {
+    width: 100%; height: 246px;
+    background-color: black;
+}
+
+/* f-container */
+.f-container {
+    display: flex;
+    width: 1000px; height: 90px;
+    margin: 0 auto;
+    padding-top: 78px;
+    justify-content: space-between;
+}
+
+/* foot-info */
+
+
+.foot-info a,
+.foot-info p {
+    font-family: 'Leferi Base Bold';
+    font-size: 18px;
+    color: white;
+}
+
+.foot-info p:last-child {
+    margin-top: 16px;
+}
+
+.foot-info a:hover {
+    text-decoration: underline;
+}
+
+/* sns-box */
+.sns-box {
+    display: flex;
+    width: 162px; height: 44px;
+    margin-top: 46px;
+    justify-content: space-between;
 }
